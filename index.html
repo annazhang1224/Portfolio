@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  HOW TO EDIT
+  Everything that needs replacing with real details is wrapped in <span class="todo">…</span>
+  and shows up highlighted in yellow on the page. Replace the text, remove the span.
+  When nothing is yellow any more, you're done.
+  Keep client names out unless you have permission. "A UK mid-market retailer" is fine.
+-->
+<title>Anna Surname, strategy and M&amp;A consulting</title>
+<meta name="description" content="Selected consulting work, pro bono projects and background.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #f5f7f2;
+  --ink: #1b2420;
+  --soft: #55625b;
+  --green: #17403a;
+  --green-tint: #dfe8e1;
+  --line: #b9c4bb;
+  --ochre: #c4952a;
+  --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --text: "Literata", Georgia, "Times New Roman", serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--text);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--green); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--ochre); outline-offset: 3px; }
+p { margin: 0 0 1em; max-width: 66ch; }
+h1, h2, h3, h4 { font-family: var(--display); line-height: 1.15; margin: 0; }
+
+.todo { background: #f6e6b4; box-shadow: 0 0 0 2px #f6e6b4; }
+
+.wrap { max-width: 68rem; margin: 0 auto; padding: 0 1.5rem; }
+
+/* top bar */
+.top {
+  display: flex; justify-content: space-between; align-items: baseline;
+  flex-wrap: wrap; gap: .5rem 2rem;
+  padding-top: 1.75rem; padding-bottom: 1.75rem;
+  font-family: var(--display); font-size: .95rem;
+}
+.top .name { font-weight: 700; color: var(--ink); text-decoration: none; font-size: 1.05rem; }
+.top nav { display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; }
+.top nav a { color: var(--soft); text-decoration: none; }
+.top nav a:hover { color: var(--green); text-decoration: underline; }
+
+/* opening */
+.opening { padding-top: 4.5rem; padding-bottom: 5rem; }
+.opening h1 {
+  font-size: clamp(2rem, 4.4vw, 3.4rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  max-width: 24ch;
+  color: var(--green);
+}
+.opening .more { font-size: .98rem; line-height: 1.65; color: var(--soft); max-width: 62ch; margin-top: 1.1rem; }
+.opening .lede { margin-top: 2rem; font-size: 1.2rem; max-width: 56ch; color: var(--ink); }
+
+/* sections */
+section { padding-top: 4.5rem; padding-bottom: 4.5rem; }
+section > .wrap > h2 {
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  font-weight: 700; letter-spacing: -0.015em;
+  margin-bottom: .6rem;
+}
+.intro { color: var(--soft); margin-bottom: 3rem; }
+
+/* cases */
+.case {
+  display: grid; grid-template-columns: 11rem 1fr; gap: 1rem 3rem;
+  padding: 2.75rem 0;
+  border-top: 1px solid var(--line);
+}
+.case:last-child { padding-bottom: 0; }
+.case .meta { font-family: var(--display); font-size: .9rem; color: var(--soft); line-height: 1.5; }
+.case .meta strong { display: block; color: var(--ink); font-weight: 600; }
+.case h3 { font-size: 1.55rem; font-weight: 600; letter-spacing: -0.01em; max-width: 32ch; margin-bottom: .9rem; }
+.case p { margin-bottom: .9rem; }
+.case .result { font-family: var(--display); font-size: 1rem; line-height: 1.45; color: var(--green); font-weight: 600; margin: 0; max-width: 60ch; }
+
+/* plain rows: experience, education */
+.row {
+  display: grid; grid-template-columns: 11rem 1fr; gap: .5rem 3rem;
+  padding: 1.75rem 0; border-top: 1px solid var(--line);
+}
+.row .when { font-family: var(--display); font-size: .9rem; color: var(--soft); padding-top: .3rem; }
+.row h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: .15rem; }
+.row .where { font-family: var(--display); color: var(--soft); font-size: .98rem; margin-bottom: .7rem; }
+.row p:last-child { margin-bottom: 0; }
+
+.tinted { background: var(--green-tint); }
+
+/* contact */
+.contact h2 { max-width: 22ch; }
+.contact .links { font-family: var(--display); font-size: 1.15rem; margin-top: 1.75rem; display: flex; flex-wrap: wrap; gap: .5rem 2.25rem; }
+footer { font-family: var(--display); font-size: .85rem; color: var(--soft); padding: 2rem 0 3rem; }
+
+/* small screens */
+@media (max-width: 860px) {
+}
+@media (max-width: 760px) {
+  .opening { padding-top: 2.5rem; }
+  .case, .row { grid-template-columns: 1fr; gap: .6rem; }
+  section { padding-top: 3.25rem; padding-bottom: 3.25rem; }
+}
+@media print {
+  .top nav { display: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="wrap top">
+  <a class="name" href="#top">Anna <span class="todo">Surname</span></a>
+  <nav aria-label="Sections">
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <div class="wrap opening">
+    <h1>I've spent <span class="todo">three</span> years working out what companies are worth. I'd like to spend the next few working out what they should do.</h1>
+    <p class="lede">I'm an M&amp;A consultant at <span class="todo">Firm</span> in London, moving into strategy consulting. This page goes into more depth on my project work than a CV has room for.</p>
+    <p class="more"><span class="todo">Deal work taught me to test a commercial story against the numbers quickly and under pressure. The projects I've enjoyed most, though, are the ones where the question was open: which programmes a charity should keep, how a student society should find clients. Those are here alongside the deal work.</span> For roles, dates and education, see <a href="cv.pdf">my CV</a>.</p>
+  </div>
+
+  <section id="projects" class="tinted">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <p class="intro">Each is titled with its conclusion. Client names are left out where the work was confidential.</p>
+
+      <article class="case">
+        <div class="meta">
+          <strong>Deal work</strong>
+          <span class="todo">2025</span><br>
+          <span class="todo">Analyst, team of four</span>
+        </div>
+        <div>
+          <h3><span class="todo">The target's growth depended on two customers, so the price had to reflect that</span></h3>
+          <p><span class="todo">A private equity buyer wanted to know whether a UK software business could sustain 20% annual growth. I built the market model, ran twelve customer interviews and rebuilt the revenue forecast by customer cohort, which showed concentration risk the management forecast hid.</span></p>
+          <p class="result"><span class="todo">Result: the client revised its offer and negotiated an earn-out.</span></p>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="meta">
+          <strong>Deal work</strong>
+          <span class="todo">2024</span><br>
+          <span class="todo">Analyst</span>
+        </div>
+        <div>
+          <h3><span class="todo">Two thirds of the synergies were in procurement, not headcount</span></h3>
+          <p><span class="todo">Two mid-market distributors were combining. I mapped overlapping suppliers across both, sized each saving and sequenced them into a first-100-days plan.</span></p>
+          <p class="result"><span class="todo">Result: the board approved the plan and procurement was the first workstream to start.</span></p>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="meta">
+          <strong>Pro bono</strong>
+          <span class="todo">2023</span><br>
+          <span class="todo">Project lead, team of five</span>
+        </div>
+        <div>
+          <h3><span class="todo">The charity should drop two programmes to fund the one that works</span></h3>
+          <p><span class="todo">An education charity had flat income and five programmes. I led a student team through cost-per-outcome analysis and funder interviews, and took three options to the trustees.</span></p>
+          <p class="result"><span class="todo">Result: trustees adopted the recommendation and moved the budget the following year.</span></p>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="meta">
+          <strong>LSE Strategic Consulting Society</strong>
+          <span class="todo">2022 to 2023</span><br>
+          <span class="todo">President</span>
+        </div>
+        <div>
+          <h3><span class="todo">Student projects got better once someone senior read the deck before the client did</span></h3>
+          <p><span class="todo">As president I ran a committee of twelve, pairing student teams with real clients. I introduced a midpoint review with alumni working in consulting, and went out to find clients rather than waiting for requests.</span></p>
+          <p class="result"><span class="todo">Result: client projects went from 6 to 11 a year, each with an alumni reviewer.</span></p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="contact tinted">
+    <div class="wrap">
+      <h2>If you're hiring for a strategy team, I'd like to hear from you.</h2>
+      <div class="links">
+        <a href="mailto:anna@example.com"><span class="todo">anna@example.com</span></a>
+        <a href="https://www.linkedin.com/in/"><span class="todo">LinkedIn</span></a>
+        <a href="cv.pdf"><span class="todo">Download my CV</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">Anna <span class="todo">Surname</span>, London.</footer>
+
+</body>
+</html>
