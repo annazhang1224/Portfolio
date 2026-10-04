@@ -3,14 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--
-  HOW TO EDIT
-  Everything that needs replacing with real details is wrapped in <span class="todo">…</span>
-  and shows up highlighted in yellow on the page. Replace the text, remove the span.
-  When nothing is yellow any more, you're done.
-  Keep client names out unless you have permission. "A UK mid-market retailer" is fine.
--->
-<title>Anna Surname, strategy and M&amp;A consulting</title>
+<title>Anna Zhang, strategy and M&amp;A consulting</title>
 <meta name="description" content="Selected consulting work, pro bono projects and background.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,8 +38,6 @@ a:focus-visible { outline: 2px solid var(--ochre); outline-offset: 3px; }
 p { margin: 0 0 1em; max-width: 66ch; }
 h1, h2, h3, h4 { font-family: var(--display); line-height: 1.15; margin: 0; }
 
-.todo { background: #f6e6b4; box-shadow: 0 0 0 2px #f6e6b4; }
-
 .wrap { max-width: 68rem; margin: 0 auto; padding: 0 1.5rem; }
 
 /* top bar */
@@ -64,10 +55,10 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.15; margin: 0; }
 /* opening */
 .opening { padding-top: 4.5rem; padding-bottom: 5rem; }
 .opening h1 {
-  font-size: clamp(2rem, 4.4vw, 3.4rem);
+  font-size: clamp(1.8rem, 3.8vw, 2.9rem);
   font-weight: 600;
   letter-spacing: -0.02em;
-  max-width: 24ch;
+  max-width: 30ch;
   color: var(--green);
 }
 .opening .more { font-size: .98rem; line-height: 1.65; color: var(--soft); max-width: 62ch; margin-top: 1.1rem; }
@@ -78,9 +69,8 @@ section { padding-top: 4.5rem; padding-bottom: 4.5rem; }
 section > .wrap > h2 {
   font-size: clamp(1.8rem, 3.4vw, 2.6rem);
   font-weight: 700; letter-spacing: -0.015em;
-  margin-bottom: .6rem;
+  margin-bottom: 2rem;
 }
-.intro { color: var(--soft); margin-bottom: 3rem; }
 
 /* cases */
 .case {
@@ -90,20 +80,12 @@ section > .wrap > h2 {
 }
 .case:last-child { padding-bottom: 0; }
 .case .meta { font-family: var(--display); font-size: .9rem; color: var(--soft); line-height: 1.5; }
-.case .meta strong { display: block; color: var(--ink); font-weight: 600; }
+.case .meta strong { display: block; color: var(--ink); font-weight: 600; margin-bottom: .2rem; }
 .case h3 { font-size: 1.55rem; font-weight: 600; letter-spacing: -0.01em; max-width: 32ch; margin-bottom: .9rem; }
-.case p { margin-bottom: .9rem; }
+.case ul { margin: 0 0 1.1rem; padding-left: 1.25rem; max-width: 66ch; }
+.case li { margin-bottom: .6rem; }
+.case li::marker { color: var(--green); }
 .case .result { font-family: var(--display); font-size: 1rem; line-height: 1.45; color: var(--green); font-weight: 600; margin: 0; max-width: 60ch; }
-
-/* plain rows: experience, education */
-.row {
-  display: grid; grid-template-columns: 11rem 1fr; gap: .5rem 3rem;
-  padding: 1.75rem 0; border-top: 1px solid var(--line);
-}
-.row .when { font-family: var(--display); font-size: .9rem; color: var(--soft); padding-top: .3rem; }
-.row h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: .15rem; }
-.row .where { font-family: var(--display); color: var(--soft); font-size: .98rem; margin-bottom: .7rem; }
-.row p:last-child { margin-bottom: 0; }
 
 .tinted { background: var(--green-tint); }
 
@@ -113,11 +95,9 @@ section > .wrap > h2 {
 footer { font-family: var(--display); font-size: .85rem; color: var(--soft); padding: 2rem 0 3rem; }
 
 /* small screens */
-@media (max-width: 860px) {
-}
 @media (max-width: 760px) {
   .opening { padding-top: 2.5rem; }
-  .case, .row { grid-template-columns: 1fr; gap: .6rem; }
+  .case { grid-template-columns: 1fr; gap: .6rem; }
   section { padding-top: 3.25rem; padding-bottom: 3.25rem; }
 }
 @media print {
@@ -128,7 +108,7 @@ footer { font-family: var(--display); font-size: .85rem; color: var(--soft); pad
 <body>
 
 <header class="wrap top">
-  <a class="name" href="#top">Anna <span class="todo">Surname</span></a>
+  <a class="name" href="#top">Anna Zhang</a>
   <nav aria-label="Sections">
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
@@ -138,65 +118,179 @@ footer { font-family: var(--display); font-size: .85rem; color: var(--soft); pad
 <main id="top">
 
   <div class="wrap opening">
-    <h1>I've spent <span class="todo">three</span> years working out what companies are worth. I'd like to spend the next few working out what they should do.</h1>
-    <p class="lede">I'm an M&amp;A consultant at <span class="todo">Firm</span> in London, moving into strategy consulting. This page goes into more depth on my project work than a CV has room for.</p>
-    <p class="more"><span class="todo">Deal work taught me to test a commercial story against the numbers quickly and under pressure. The projects I've enjoyed most, though, are the ones where the question was open: which programmes a charity should keep, how a student society should find clients. Those are here alongside the deal work.</span> For roles, dates and education, see <a href="cv.pdf">my CV</a>.</p>
+    <h1>I've spent the last two years working in M&amp;A and deal origination, understanding businesses through transactions and the commercial questions behind investment decisions. I now want to move closer to working directly with businesses to create value.</h1>
+    <p class="lede">I'm an M&amp;A consultant at Deloitte in London, moving into strategy consulting. This page is a record of the consulting projects I've worked on.</p>
+    <p class="more">My M&amp;A experience has taught me to stress test a commercial story against the numbers, quickly and under pressure. The projects I've enjoyed most, though, are the ones with an open question, such as what the quick wins and long term opportunities are in AI transformation for medical communications, or how a firm should build a new bolt on service offering. For my roles, education, and other background, see <a href="cv.pdf">my CV</a>.</p>
   </div>
 
   <section id="projects" class="tinted">
     <div class="wrap">
-      <h2>Projects</h2>
-      <p class="intro">Each is titled with its conclusion. Client names are left out where the work was confidential.</p>
+      <h2>Project Experience</h2>
 
       <article class="case">
         <div class="meta">
-          <strong>Deal work</strong>
-          <span class="todo">2025</span><br>
-          <span class="todo">Analyst, team of four</span>
+          <strong>Mid-Market Deal Origination, Deloitte</strong>
+          2026<br>
+          Consultant
         </div>
         <div>
-          <h3><span class="todo">The target's growth depended on two customers, so the price had to reflect that</span></h3>
-          <p><span class="todo">A private equity buyer wanted to know whether a UK software business could sustain 20% annual growth. I built the market model, ran twelve customer interviews and rebuilt the revenue forecast by customer cohort, which showed concentration risk the management forecast hid.</span></p>
-          <p class="result"><span class="todo">Result: the client revised its offer and negotiated an earn-out.</span></p>
+          <h3>Bolt-on Process – New Offering</h3>
+          <ul>
+            <li>Designed a seven step bolt-on search offering for Private Equity clients, to be produced jointly between the deal team and origination team by leveraging tailored AI agents and internal expertise</li>
+            <li>Narrowed a list of over 1,000 potential assets down to a shortlist of 50, filtered and ranked against the client's investment criteria</li>
+            <li>Piloted the process end to end and built a strategy deck to pitch it to senior partners</li>
+          </ul>
+          <p class="result">Result: Received positive feedback and support from multiple partners. The process is now being pitched to partners in other teams for wider rollout.</p>
         </div>
       </article>
 
       <article class="case">
         <div class="meta">
-          <strong>Deal work</strong>
-          <span class="todo">2024</span><br>
-          <span class="todo">Analyst</span>
+          <strong>Mid-Market Deal Origination, Deloitte</strong>
+          2026<br>
+          Consultant
         </div>
         <div>
-          <h3><span class="todo">Two thirds of the synergies were in procurement, not headcount</span></h3>
-          <p><span class="todo">Two mid-market distributors were combining. I mapped overlapping suppliers across both, sized each saving and sequenced them into a first-100-days plan.</span></p>
-          <p class="result"><span class="todo">Result: the board approved the plan and procurement was the first workstream to start.</span></p>
+          <h3>Property Consulting Services – Thematic Deck</h3>
+          <ul>
+            <li>Researched the property consulting services industry, synthesised findings from industry reports and Information Memorandums</li>
+            <li>Ran competitor analysis and assessed investment attractiveness across 5 sub sectors based on profitability, past M&amp;A activity, and AI resilience</li>
+            <li>Built one-pager factsheets for four property assets in the market</li>
+          </ul>
+          <p class="result">Result: Generated strong client interest, leading to active conversations with several clients on buyside work.</p>
         </div>
       </article>
 
       <article class="case">
         <div class="meta">
-          <strong>Pro bono</strong>
-          <span class="todo">2023</span><br>
-          <span class="todo">Project lead, team of five</span>
+          <strong>Mid-Market Deal Origination, Deloitte</strong>
+          2026<br>
+          Consultant
         </div>
         <div>
-          <h3><span class="todo">The charity should drop two programmes to fund the one that works</span></h3>
-          <p><span class="todo">An education charity had flat income and five programmes. I led a student team through cost-per-outcome analysis and funder interviews, and took three options to the trustees.</span></p>
-          <p class="result"><span class="todo">Result: trustees adopted the recommendation and moved the budget the following year.</span></p>
+          <h3>Medical Device – Insight/Pitch Deck</h3>
+          <ul>
+            <li>Led end-to-end commercial due diligence on a medical collection device business, assessing business model, organic and inorganic growth, financials, and market sizing across key growth segments including continence care and ostomy/bowel management</li>
+            <li>Analysed the target's competitive positioning, manufacturing footprint, and growth strategy (including EU expansion and acquisition plans) using the Information Memorandum, alongside wider market drivers and competitor dynamics</li>
+          </ul>
+          <p class="result">Result: The deck was shared with the healthcare financial due diligence partners, leading to a request to build a pitch deck for an interested strategic acquirer, including modelling post acquisition synergies which I also helped develop.</p>
         </div>
       </article>
 
       <article class="case">
         <div class="meta">
-          <strong>LSE Strategic Consulting Society</strong>
-          <span class="todo">2022 to 2023</span><br>
-          <span class="todo">President</span>
+          <strong>Mid-Market Deal Origination, Deloitte</strong>
+          2026<br>
+          Consultant
         </div>
         <div>
-          <h3><span class="todo">Student projects got better once someone senior read the deck before the client did</span></h3>
-          <p><span class="todo">As president I ran a committee of twelve, pairing student teams with real clients. I introduced a midpoint review with alumni working in consulting, and went out to find clients rather than waiting for requests.</span></p>
-          <p class="result"><span class="todo">Result: client projects went from 6 to 11 a year, each with an alumni reviewer.</span></p>
+          <h3>Medical Communications – AI Transformation Deck</h3>
+          <ul>
+            <li>Worked with the commercial due diligence team to build an insight deck on a medical communications business</li>
+            <li>Evaluated AI resilience across 5 service offerings of the business and identified AI transformation opportunities over a 6 to 24 month horizon, assessed by impact and capital required</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="meta">
+          <strong>Strategic Communications, Teneo</strong>
+          2022<br>
+          Strategy and communications consultant
+        </div>
+        <div>
+          <h3>Business Development</h3>
+          <ul>
+            <li>Assessed a client's regional marketing presence and positioning, identifying gaps that informed a business development document used to win a new engagement</li>
+            <li>Supported a parallel crisis risk management workstream for C-suite executives, including stakeholder mapping and crisis communication messaging</li>
+          </ul>
+          <p class="result">Result: The business development pitch deck, built on my analysis, was used by the Teneo Beijing managing partner to win the engagement.</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="meta">
+          <strong>Sustainability Strategy, Globalfields</strong>
+          2022<br>
+          Pro-bono consultant
+        </div>
+        <div>
+          <h3>B-Corp Certification Strategy</h3>
+          <ul>
+            <li>As part of a team of five, led the competitor analysis and recommendations workstream, benchmarking 17 B Corp certified environmental consultancies of comparable size to Globalfields across the five B Corp impact areas (governance, workers, community, environment, and customers), and segmenting competitors into early, quick, and late certifiers to identify successful certification pathways</li>
+            <li>Built case studies on leading certified competitors, including EverRoot Consulting's 5% revenue give to microfinance initiatives and Green Element Consulting's staff volunteering work, both of which drove strong community and worker scores</li>
+            <li>Mapped Globalfields' existing strengths against the five B Corp categories, identifying governance, environment, and community as areas of relative strength, and developed tailored recommendations across all five categories to support their certification journey</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="meta">
+          <strong>Growth Strategy, Unifuture</strong>
+          2022<br>
+          Pro-bono consultant
+        </div>
+        <div>
+          <h3>E-commerce Strategy and New Offering Exploration</h3>
+          <ul>
+            <li>Analysed the social media and marketing strategies of six consumer brands (including Xiaomi, Anker, Insta360, RELX, Wong Lo Kat, and Nongfu Spring), identifying gaps in TikTok and social engagement, and recommended lifestyle marketing through user generated content as the most feasible and effective strategy for engaging Gen Z audiences</li>
+            <li>Built a full customer journey map for China to UK cross border logistics, covering customs regulations, export declarations, freight options (air, sea, and rail), and storage solutions (private and public warehousing), mapped against customer goals, actions, channels, and KPIs at each stage</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="ventures">
+    <div class="wrap">
+      <h2>Venture / Start up Experience</h2>
+
+      <article class="case">
+        <div class="meta">
+          <strong>London Strategic Consulting</strong>
+          2022<br>
+          Managing Director
+        </div>
+        <div>
+          <h3>Business Development and Team Leadership</h3>
+          <ul>
+            <li>Sourced over 40 SME and start up prospects through in person pitching at competitions and events, scoping projects through initial calls and converting them into signed engagements</li>
+            <li>Managed and coached over 200 student consultants through bespoke training and workshops, supported by a network of 30+ mentors from top tier consultancies</li>
+          </ul>
+          <p class="result">Result: Achieved a 50%+ personal client conversion rate: for every 10 prospects approached, 5 became signed engagements. This approach was adopted and shared more widely across the consultancy.</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="meta">
+          <strong>Yumm Singa (Singaporean cooking sauce startup)</strong>
+          2026<br>
+          Pro-bono consultant
+        </div>
+        <div>
+          <h3>B2B Sales and Business Growth</h3>
+          <ul>
+            <li>Designed and optimised retailer and distributor sales strategy by developing GenAI enabled research templates and persona informed one page branding sheets</li>
+            <li>Co-drafted the proposal for a Southeast Asian Food Festival, leading vendor selection, brand strategy, and event ideation</li>
+          </ul>
+          <p class="result">Result: Retail activity outcomes are still in progress. The work has already saved the founder significant time by streamlining and automating research that was previously done manually.</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="meta">
+          <strong>Cambridge Collaborative Ventures (early-stage consultancy startup)</strong>
+          2024<br>
+          Pro-bono consultant
+        </div>
+        <div>
+          <h3>Consultancy Strategy &amp; Organisational Scaling</h3>
+          <ul>
+            <li>Structured the consultancy's offerings into three core segments, standardised based on existing client work and competitor analysis of startup focused consultancies</li>
+            <li>Proposed an organisational structure for scaling; created a hiring process for recruiting interns and drafted JDs</li>
+            <li>Evaluated marketing and sales training as a potential new offering, proposing two delivery models (a workshop based model and a resource based model) assessed for desirability, viability, and feasibility</li>
+          </ul>
+          <p class="result">Result: A company pitch deck and a formalised listed business offerings was developed directly from this research and strategy work.</p>
         </div>
       </article>
     </div>
@@ -204,18 +298,18 @@ footer { font-family: var(--display); font-size: .85rem; color: var(--soft); pad
 
   <section id="contact" class="contact tinted">
     <div class="wrap">
-      <h2>If you're hiring for a strategy team, I'd like to hear from you.</h2>
+      <h2>Get in Touch</h2>
       <div class="links">
-        <a href="mailto:anna@example.com"><span class="todo">anna@example.com</span></a>
-        <a href="https://www.linkedin.com/in/"><span class="todo">LinkedIn</span></a>
-        <a href="cv.pdf"><span class="todo">Download my CV</span></a>
+        <a href="mailto:anna.jianian@gmail.com">anna.jianian@gmail.com</a>
+        <a href="https://www.linkedin.com/in/jianian-anna-zhang-0b9570216/">LinkedIn</a>
+        <a href="cv.pdf">Download my CV</a>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer class="wrap">Anna <span class="todo">Surname</span>, London.</footer>
+<footer class="wrap">Anna Zhang, London.</footer>
 
 </body>
 </html>
